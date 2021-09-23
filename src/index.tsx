@@ -6,9 +6,6 @@ type SquareProps = {
     value: string | null,
     onClick: () => void
 }
-type SquareState = {
-    
-}
 
 type BoardProps = {
     squares: Array<string | null>,
