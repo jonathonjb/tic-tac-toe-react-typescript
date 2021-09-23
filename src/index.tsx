@@ -7,6 +7,7 @@ type SquareProps = {
     onClick: () => void
 }
 type SquareState = {
+    
 }
 
 type BoardProps = {
