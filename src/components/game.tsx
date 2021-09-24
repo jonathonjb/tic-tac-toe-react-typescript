@@ -23,11 +23,9 @@ function calculateWinner(squares: Array<string | null>): string | null {
 }
 
 function Game(): JSX.Element {
-  const [history, setHistory] = useState([{ squares: Array(9).fill(null) }] as Array<{
-    squares: Array<string | null>;
-  }>);
-  const [stepNumber, setStepNumber] = useState(0 as number);
-  const [xIsNext, setXIsNext] = useState(true as boolean);
+  const [history, setHistory] = useState<Array<{ squares: Array<string | null> }>>([{ squares: Array(9).fill(null) }]);
+  const [stepNumber, setStepNumber] = useState<number>(0);
+  const [xIsNext, setXIsNext] = useState<boolean>(true);
 
   function handleClick(i: number): void {
     const currHistory = history.slice(0, stepNumber + 1);
